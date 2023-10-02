@@ -11,6 +11,7 @@
 - [Twitch Chat OAuth Gen](https://twitchapps.com/tmi/)
 - [Twitch Bot.js](https://www.youtube.com/watch?v=hoiWxlZ6xHw&t=309s)
 - [tmi.js install](https://www.npmjs.com/package/tmi.js)
+- [NPM request package](https://www.npmjs.com/package/request)
 - tokens & secret in gist 
 - [Heroku](https://www.heroku.com/)
 - [tmi.js actual docs](https://github.com/tmijs/docs/tree/gh-pages/_posts)
@@ -37,9 +38,9 @@
 ### Potential features: 
 - [ ] Whisper command that is meant to send me a whisper with the clip's link to avoid chat clutter and spam after it is generated -> [tmi - Whisper command how to](https://github.com/tmijs/docs/blob/gh-pages/_posts/v1.4.2/2019-03-03-Commands.md#whisper)
 - [ ] Static webpage as UI if possible on GH Pages - *ex in: [configurations](https://github.com/tmijs/docs/blob/gh-pages/_posts/v1.4.2/2019-03-03-Configuration.md)*
-- [ ] Typescript version kek
+- [ ] Typescript version kek [Twitch Typescript API Wrapper Library](https://www.npmjs.com/package/twitch-api-typescript)
 - [ ] consider sth with raids
-- [ ] docker TOPKEK
+- [ ] docker 
 
 ## FML:
 - [ ] Test a get request with CLI for latest vid ?  
@@ -61,3 +62,41 @@
     }
 }
 ```
+
+> ### Ex. response:
+```
+{
+  "data": [
+    {
+      "id": "RandomClip1",
+      "url": "https://clips.twitch.tv/AwkwardHelplessSalamanderSwiftRage",
+      "embed_url": "https://clips.twitch.tv/embed?clip=RandomClip1",
+      "broadcaster_id": "1234",
+      "broadcaster_name": "JJ",
+      "creator_id": "123456",
+      "creator_name": "MrMarshall",
+      "video_id": "",
+      "game_id": "33103",
+      "language": "en",
+      "title": "random1",
+      "view_count": 10,
+      "created_at": "2017-11-30T22:34:18Z",
+      "thumbnail_url": "https://clips-media-assets.twitch.tv/157589949-preview-480x272.jpg",
+      "duration": 12.9,
+      "vod_offset": 1957,
+      "is_featured": true
+    },
+    ...
+  ],
+  "pagination": {
+    "cursor": "eyJiIjpudWxsLCJhIjoiIn0"
+  }
+}
+```
+
+
+
+
+
+
+
